@@ -8,7 +8,14 @@
 </head>
 <body>
     <?php
-    
+    //Commentaire en ligne
+    echo "Hello la plateforme!";
+
+    /*
+        Commentaire en bloc
+    */
+    echo "Hello LaPlateforme!";
+
     ?>
 </body>
 </html>
