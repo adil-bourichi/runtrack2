@@ -19,10 +19,17 @@
 
     $val = 6;
     echo $val ."<br>" ;
-    echo $val +=4 ."<br>";
+
+    $val += 4 ;
+    echo $val."<br>";
 
     $myBool = true ;
-    echo $myBool . "<br>";
+    echo var_export($myBool, true) . "<br>";
+
+    $myBool = false;
+    echo var_export($myBool, true) . "<br>";
+    
+    
     ?>
 </body>
 
