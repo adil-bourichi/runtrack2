@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="index.php" method="get">
+    <form action="index.php" method="post">
         <input type="text" name="nom">
         <input type="text" name="prenom">
         <input type="email" name="email">
@@ -26,13 +26,12 @@
             </thead>
             <tr>
                 <td>
-                    <?php foreach ($_GET as $name => $mail) {
+                    <?php foreach ($_POST as $name => $mail) {
                         echo $name . "<br>";
                     } ?>
                 </td>
-                
                 <td>
-                    <?php foreach ($_GET as $name => $mail) {
+                    <?php foreach ($_POST as $name => $mail) {
                         echo $mail . "<br>";
                     } ?></td>
                 </td>
