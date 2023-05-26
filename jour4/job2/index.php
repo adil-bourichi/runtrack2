@@ -27,17 +27,17 @@
             <tr>
                 <td>
                     <?php foreach ($_GET as $name => $mail) {
-                        echo $name ."<br>";
+                        echo $name . "<br>";
                     } ?>
                 </td>
                 <td>
                     <?php foreach ($_GET as $name => $mail) {
-                        echo $name ."<br>";
+                        echo $name . "<br>";
                     } ?>
                 </td>
                 <td>
                     <?php foreach ($_GET as $name => $mail) {
-                        echo $mail ."<br>";
+                        echo $mail . "<br>";
                     } ?></td>
                 </td>
 
