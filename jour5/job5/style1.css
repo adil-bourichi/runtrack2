@@ -1,0 +1,23 @@
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333333;
+  }
+  
+  form {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
