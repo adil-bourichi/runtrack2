@@ -16,9 +16,8 @@
 
     <?php
     if (isset($_GET)) {
-        foreach ($_GET as $name => $email)
+        $count = count($_GET);
         echo "Le nombre d'arguments GET envoyé est : " . $count;
-        var_dump($_GET);
     }
     ?>
     
