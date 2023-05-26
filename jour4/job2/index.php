@@ -10,9 +10,40 @@
 
 <body>
     <form action="index.php" method="get">
-        <label for=""></label>
-
+        <input type="text" name="nom">
+        <input type="text" name="prenom">
+        <input type="email" name="email">
+        <input type="submit" value="Envoyer">
     </form>
+
+    <table>
+        <theah>
+            <tr>
+                <th>Argument</th>
+                <th>Valeur</th>
+
+            </tr>
+            </thead>
+            <tr>
+                <td>
+                    <?php foreach ($_GET as $name => $mail) {
+                        echo $name ."<br>";
+                    } ?>
+                </td>
+                <td>
+                    <?php foreach ($_GET as $name => $mail) {
+                        echo $name ."<br>";
+                    } ?>
+                </td>
+                <td>
+                    <?php foreach ($_GET as $name => $mail) {
+                        echo $mail ."<br>";
+                    } ?></td>
+                </td>
+
+            </tr>
+    </table>
+
 </body>
 
 </html>
