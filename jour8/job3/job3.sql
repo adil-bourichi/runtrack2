@@ -1,1 +1,1 @@
-SELECT * FROM `etudiants` WHERE 1
+SELECT * FROM `etudiants` WHERE 1;
