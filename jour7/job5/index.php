@@ -86,4 +86,56 @@ if (isset($_POST['case'])) {
     } else {
         $casesRemplies = true;
         foreach ($_SESSION['grille'] as $ligne) {
-            if (in_array('-', $ligne
+            if (in_array('-', $ligne)) {
+                $casesRemplies = false;
+                break;
+            }
+        }
+        if ($casesRemplies) {
+            echo 'Match nul !';
+            $_SESSION['grille'] = [
+                ['-', '-', '-'],
+                ['-', '-', '-'],
+                ['-', '-', '-']
+            ];
+        }
+    }
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jeu du Morpion</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jeu du Morpion</h1>
+    <?php
+    if (isset($_POST['case']) || isset($_POST['reinitialiser'])) {
+        afficherGrille();
+    } else {
+        echo '<p>Bienvenue !</p>';
+    }
+    ?>
+
+    <form method="post" action="">
+        <input type="submit" name="reinitialiser" value="Réinitialiser la partie">
+    </form>
+</body>
+
+</html>
